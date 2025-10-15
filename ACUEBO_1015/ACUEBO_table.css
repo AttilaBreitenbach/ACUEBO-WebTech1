@@ -1,0 +1,18 @@
+body{
+text-align: center;
+}
+table{
+    width: 600px;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td tr{
+    border: 1px solid;
+    text-align: center;
+    border-color: black;
+    /* height: 300px;
+    width: 150px; */
+}
+.scroll{
+    overflow-y: auto;
+}

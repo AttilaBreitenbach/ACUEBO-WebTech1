@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="ACUEBO_table.css"> -->
+        <style>
+            table{
+                width: 500px;
+            }
+            div.scroll{
+                overflow-x: auto;
+            }
+            table, th, td, tr{
+
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align:center;
+            }
+        </style>
+        </head>
+    <body>
+        <h1>Táblázat lészítése, formázása</h1>
+        <h1>Táblázat elemei</h1>
+        <table>
+            <tr style="background-color: gray;" id="1sor"><th>1. oszlop fejléce</th><th>2. oszlop fejléce</th><th>3. oszlop fejléce</th></tr>
+            <tr style="background-color: red;" id="2sor"><td>1.sor 1. elem</td><td>1. sor 2. elem</td><td>1.sor 3. elem</td></tr>
+                <tr style="background-color: yellow;">
+                    <td>2.sor 1. elem</td>
+                    <div class="scroll"><td>2. sor 2. elem Az ember ősidők óta használ különböző eszközöket, ha úgy tetszik, számológépet földi javai számbavételéhez, a mennyiségekkel végzett kalkulusok gyorsabb, pontosabb, kevesebb, emberi munkát igánylő végrehajtásához</td></div>
+                    <td>2.sor 3. elem</td>
+                </tr>
+            <tr style="background-color: yellow;" id="3sor"><td>3.sor 1. elem</td><td>3. sor 2. elem</td><td>3.sor 3. elem</td></tr>
+            </table>
+        </body>
+    </html>
