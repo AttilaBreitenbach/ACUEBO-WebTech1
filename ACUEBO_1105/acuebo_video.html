@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        
+    </head>
+        <body>
+            <div style="text-align: center;">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="Volume()">Sound</button>
+                <button onclick="Speed()">Speed</button>
+                <br>
+                <video id="video1 "width="420">
+                    <source src="acuebo_video.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+                
+            <script>
+                var myVideo = document.getElementById("video1"); 
+    
+                function playPause() 
+                { 
+                    if (myVideo.paused) {
+                        myVideo.play();} 
+                    else {
+                        myVideo.pause(); }
+                } 
+                function Volume()
+                {
+    
+                }
+                function Speed()
+                {
+    
+                }
+                </script>
+            </body>
+            
+    </html>
