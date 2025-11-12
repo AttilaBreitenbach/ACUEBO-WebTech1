@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>JSON Text konvertálása JavaScript objektummá!</title>
+    </head>
+    <body>     
+        <p id="demo"></p>
+        <script>
+            const txt=('{"nev":"Minta Béla","iranyitoszam":"3900","varos":"Miskolc","egyetem":"ME"}')
+            const obj = JSON.parse(txt);
+            document.getElementById("demo").innerHTML = "Név: "+obj.nev + ",  Irányítószám: " + obj.iranyitoszam+", Város:"+obj.varos+", Egyetem:"+obj.egyetem;
+        </script>
+    </body>
+</html>

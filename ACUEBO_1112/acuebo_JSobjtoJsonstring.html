@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title> JS objektumot konvertálja JSON String.</title>
+    </head>
+    <body>     
+        <p id="demo"></p>
+        <script>
+            const myObj= {Egyetem: "Miskolci Egyetem", varos: "Miskolc", iranyitoszam: "3515", nev: "Példa Béla"}
+            const myJSON = JSON.stringify(myObj);
+            document.getElementById("demo").innerHTML = myJSON;
+        </script>
+    </body>
+</html>

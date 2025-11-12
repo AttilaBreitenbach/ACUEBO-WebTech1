@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+        <h1>JSON fájl feldolgozás, beolvasás - JAVAScript-ben</h1>
+        <h2>JSON:</h2>
+        
+        <p id="demo"></p>
+        <script>
+            const txt=('{"nev":"HTML5","kiterjesztes":"html"}')
+            const obj = JSON.parse(txt);
+            document.getElementById("demo").innerHTML = "Név: "+obj.nev + ",  Kiterjesztés: " + obj.kiterjesztes;
+        </script>
+        <button>JSON beolvasása</button>
+    </body>
+</html>
