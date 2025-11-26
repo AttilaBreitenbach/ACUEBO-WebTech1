@@ -1,0 +1,41 @@
+.header{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.hide{
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.header:hover .hide{
+    visibility: visible;
+}
+.gomb{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.doboz{
+    visibility: hidden;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.gomb:hover .doboz{
+    visibility: visible;
+}
+input{
+    border-color: black;
+}

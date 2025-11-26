@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="header"><h1>JQuery feladatok</h1>
+    <span class="hide">Itt jelenik meg a szöveg</span></div>
+    <p id="eltunt">A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni. <b onclick="Kattint()">Kattints ide</b> és eltűnik!</p>
+    <p id="double">Elterjedtnek tekinthető, segítségével könnyen bejárhatü egty HTML oldal DOM-ja. <b ondblclick="DoubleClick()">Kattints ide duplán</b>, és eltűnik</p>
+    <label for="name">Név: </label>
+        <input type="text" id="name" name="name"><br>
+        <br>
+    <label for="mail">E-mail: </label>
+        <input type="text" id="mail" name="mail" onmouseover="borderColor()" onmouseout="alap()"><br>
+        <br>
+    <label for="pasw">Jelszó: </label>
+        <input type="text" id="pasw" name="pasw" onclick="kitolt()"><br>
+        <br>
+    <div class="gomb"><button>Jelentkezés</button>
+    <span class="doboz">Ne kattints rá</span></div>
+</body>
+</html>
