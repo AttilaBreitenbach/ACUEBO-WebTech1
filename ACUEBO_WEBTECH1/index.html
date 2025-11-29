@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="hu-HU">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin>
+
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="btn"><a class="nav-link" href="calendar.html"><img src="Assets/images.png" width="50" height="50">Calendar</a></div>
+            <div class="btn"><a class="nav-link" href="teams.html"><img src="Assets/0ebdfdd5b18e5097d9a31ac997523231_t.jpeg" width="50" height="50"><br>Teams</a></div>
+            <!-- <a class="nav-link" href="#pilots"><img src="Assets/images.jfif" height="50" width="50"><br>Pilots</a> -->
+            <div class="btn"><a class="nav-link" href="map.html"><img src="Assets/31-313139_formula-1-austria-2019-hd-png-download.png" width="50" height="50"><br>Tracks</a></div>
+        </div>
+        <div class="main-box">
+            <div class="card-box">
+                <div class="box left-top">
+                    <div class="datetime">
+                        <p id="date"></p>
+                        <img src="Assets/images.png">
+                    </div>
+                </div>
+                <div class="box left-mid">
+                    <div class="cella"><p>Következő Verseny:</p></div>
+                    <div class="cellb"><p id="timer"></p></div>
+                    <div class="cellc"><img src="Assets/flag.png" height="100px" width="100px"></div>
+                </div>
+                <div class="box left-bottom">
+                    <table class="lboard">
+                        <h4>Pontverseny:</h4>
+                        <tr>
+                            <th>P</th>
+                            <th>#</th>
+                            <th>Név</th>
+                            <th>Pont</th>
+                        </tr>
+                        <tr><td>1.</td><td>4</td><td>Lando Norris</td><td>390</td></tr>
+                        <tr><td>2.</td><td>81</td><td>Oscar Piastri</td><td>366</td></tr>
+                        <tr><td>3.</td><td>1</td><td>Max Verstappen</td><td>366</td></tr>
+                        <tr><td>4.</td><td>63</td><td>George Russel</td><td>294</td></tr>
+                        <tr><td>5.</td><td>16</td><td>Charles Leclerc</td><td>226</td></tr>
+                        <tr><td>6.</td><td>44</td><td>Lewis Hamilton</td><td>152</td></tr>
+                        <tr><td>7.</td><td>12</td><td>Andrea Kimi Antonelli</td><td>136</td></tr>
+                        <tr><td>8.</td><td>23</td><td>Alexander Albon</td><td>73</td></tr>
+                    </table>
+                    <a href="leadboard.html" class="bt">Bővebben</a>
+                </div>
+                <div class="box center-top">
+                    <video width="100%" height="100%" controls muted>
+                        <source src="https://www.youtube.com/watch?v=uQc-pW3QLuI">
+                    </video>
+                </div>
+                <div class="box center-bottom">
+                    <div class="row justify-content-center">
+                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="2000">
+                                    <img src="Assets/slide/austin.avif" class="d-block w-100" alt="austin">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="Assets/slide/mexico.webp" class="d-block w-100" alt="mexico">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="Assets/slide/vegas.webp" class="d-block w-100" alt="vegas">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="Assets/slide/katar.webp" class="d-block w-100" alt="katar">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box right-col">
+                    <h4>Hírek</h4>
+                    <ul class="news">
+                        <li>Norris még meglepheti Verstappent? Sokk a világbajnokságban!</li>
+                        <li>2026-ban Jön a Nagy F1 Gumiabroncs Forradalom! Részletek!</li>
+                        <li>Sokk a Forma-1-ben: McLaren összeomlása megnyitja Verstappen útját!</li>
+                        <li>Hülkenberg elárulta: Ezért küszködött a Sauber Las Vegasban!</li>
+                        <li>Sokkoló újítás? MotoGP is beszállhat az F1 utcai versenyeibe!</li>
+                    </ul>
+                    <p>További hírekért iratkozz fel hírlevelünkre:</p>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="bt">Felíratkozás</button>
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <form class="modal-content" action="">
+                            <div class="container">
+                                <h1>Felíratkozás Hírlevélre</h1>
+                                <p>(Töltsön ki minden mezőt)</p>
+                                <hr>
+                                <label for="email"><b>Email:</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required><br>
+
+                                <label for="name"><b>Név:</b></label>
+                                <input type="name" placeholder="Enter Name" name="name" required><br>
+
+                                <label for="age"><b>Kor:</b></label>
+                                <input type="age" placeholder="Enter Age" name="age" required><br>
+                                
+                                <label>
+                                <input type="checkbox" name="female" style="margin-bottom:15px"> Férfi
+                                <input type="checkbox" name="male" style="margin-bottom:15px"> Nő
+                                </label>
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mégse</button>
+                                    <button type="submit" class="signupbtn">Felíratkozás</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

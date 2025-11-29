@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background: linear-gradient(to bottom left,#262f2c 25%,#524166 75%);
+    color: #e6eef8;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #262f2c;
+    width: fit-content;
+}
+.back a{
+    text-decoration: none;
+    color: #e6eef8;
+}
+.tartalom{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.bal{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+}
+.jobb{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+.bal table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+td{
+    border: 1px #e6eef8 solid;
+    padding: 10px;
+}
+.bal table .l{
+    text-align: left;
+}
+.jobb table{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.jobb table .l{
+    text-align: left;
+}
