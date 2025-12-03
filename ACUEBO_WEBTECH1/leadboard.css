@@ -47,8 +47,10 @@ body {
     font-size: 20px;
 }
 td{
-    border: 1px #e6eef8 solid;
     padding: 10px;
+}
+tr:hover{
+    background-color: #262f2c;
 }
 .bal table .l{
     text-align: left;
