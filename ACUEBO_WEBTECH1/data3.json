@@ -1,0 +1,146 @@
+[
+    {
+        "sorszam":"1",
+        "datum":"Már 14",
+        "helyszin":"Ausztrália Nagydíj",
+        "varos":"Melbourne"
+    },
+    {
+        "sorszam":"2",
+        "datum":"Már 23",
+        "helyszin":"Kína Nagydíj",
+        "varos":"Shanghaj"
+    },
+    {
+        "sorszam":"3",
+        "datum":"Ápr 04",
+        "helyszin":"Japán Nagydíj",
+        "varos":"Szuzuka"
+    },
+    {
+        "sorszam":"4",
+        "datum":"Ápr 11",
+        "helyszin":"Bahrein Nagydíj",
+        "varos":"Szahír"
+    },
+    {
+        "sorszam":"5",
+        "datum":"Ápr 18",
+        "helyszin":"Szaúd-Arábia Nagydíj",
+        "varos":"Jeddah"
+    },
+    {
+        "sorszam":"6",
+        "datum":"Máj 02",
+        "helyszin":"Amerikai Egyesült Államok",
+        "varos":"Miami Nagydíj"
+    },
+    {
+        "sorszam":"7",
+        "datum":"Máj 16",
+        "helyszin":"Olasz Nagydíj",
+        "varos":"Imola"
+    },
+    {
+        "sorszam":"8",
+        "datum":"Máj 23",
+        "helyszin":"Monaco Nagydíj",
+        "varos":"Monte Carlo"
+    },
+    {
+        "sorszam":"9",
+        "datum":"Máj 30",
+        "helyszin":"Spanyol Nagydíj",
+        "varos":"Barcelona"
+    },
+    {
+        "sorszam":"10",
+        "datum":"Jún 13",
+        "helyszin":"Kanada Nagydíj",
+        "varos":"Montreal"
+    },
+    {
+        "sorszam":"11",
+        "datum":"Jún 27",
+        "helyszin":"Ausztria Nagydíj",
+        "varos":"Spielberg"
+    },
+    {
+        "sorszam":"12",
+        "datum":"Júl 04",
+        "helyszin":"Egyesült Kiráylság Nagydíj",
+        "varos":"MSilverstoneelbourne"
+    },
+    {
+        "sorszam":"13",
+        "datum":"Júl 25",
+        "helyszin":"Belguim Nagydíj",
+        "varos":"Spa-Francorchamps"
+    },
+    {
+        "sorszam":"14",
+        "datum":"Aug 01",
+        "helyszin":"Magyar Nagydíj",
+        "varos":"Mogyoród"
+    },
+    {
+        "sorszam":"15",
+        "datum":"Aug 29",
+        "helyszin":"Hollandia Nagydíj",
+        "varos":"Zandvoort"
+    },
+    {
+        "sorszam":"16",
+        "datum":"Szept 05",
+        "helyszin":"Olasz Nagydíj",
+        "varos":"Monza"
+    },
+    {
+        "sorszam":"17",
+        "datum":"Szept 19",
+        "helyszin":"Azerbajdszán Nagydíj",
+        "varos":"Baku"
+    },
+    {
+        "sorszam":"18",
+        "datum":"Okt 03",
+        "helyszin":"Szingapúr Nagydíj",
+        "varos":"Szingapúr"
+    },
+    {
+        "sorszam":"19",
+        "datum":"Okt 17",
+        "helyszin":"USA Nagydíj",
+        "varos":"Austin"
+    },
+    {
+        "sorszam":"20",
+        "datum":"Okt 24",
+        "helyszin":"Mexikó Nagydíj",
+        "varos":"Mexikóváros"
+    },
+    {
+        "sorszam":"21",
+        "datum":"Nov 07",
+        "helyszin":"Brazília Nagydíj",
+        "varos":"Sao Paulo"
+    },
+    {
+        "sorszam":"22",
+        "datum":"Nov 20",
+        "helyszin":"USA Nagydíj",
+        "varos":"Las Vegas"
+    },
+    {
+        "sorszam":"23",
+        "datum":"Nov 28",
+        "helyszin":"Katar Nagydíj",
+        "varos":"Doha"
+    },
+    {
+        "sorszam":"24",
+        "datum":"Dec 05",
+        "helyszin":"Egyesült Arab Emírség Nagydíj",
+        "varos":"Abu-Dzabi"
+    }
+]

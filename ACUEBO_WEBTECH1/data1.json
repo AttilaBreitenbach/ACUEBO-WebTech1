@@ -1,0 +1,122 @@
+[
+    {
+        "p": "1",
+        "code": "4",
+        "name": "Lando Norris",
+        "point": "390"
+    },
+    {
+        "p": "2",
+        "code": "81",
+        "name": "Oscar Piastri",
+        "point": "366"
+    },
+    {
+        "p": "3",
+        "code": "1",
+        "name": "Max Verstappen",
+        "point": "366"
+    },
+    {
+        "p": "4",
+        "code": "63",
+        "name": "George Russel",
+        "point": "294"
+    },  
+    {
+        "p": "5",
+        "code": "16",
+        "name": "Charles Leclerc",
+        "point": "226"
+    },  
+    {
+        "p": "6",
+        "code": "44",
+        "name": "Lewis Hamilton",
+        "point": "152"
+    },  
+    {
+        "p": "7",
+        "code": "12",
+        "name": "Andrea Kimi Antonelli",
+        "point": "136"
+    },  
+    {
+        "p": "8",
+        "code": "23",
+        "name": "Alexander Albon",
+        "point": "73"
+    },  
+    {
+        "p": "9",
+        "code": "37",
+        "name": "Isack Hadjar",
+        "point": "51"
+    },  
+    {
+        "p": "10",
+        "code": "27",
+        "name": "Nico Hülkenberg",
+        "point": "49"
+    },  
+    {
+        "p": "11",
+        "code": "55",
+        "name": "Carlos Sainz",
+        "point": "48"
+    },  
+    {
+        "p": "12",
+        "code": "50",
+        "name": "Oliver Bearman",
+        "point": "42"
+    },  
+    {
+        "p": "13",
+        "code": "14",
+        "name": "Fernando Alonso",
+        "point": "40"
+    },  
+    {
+        "p": "14",
+        "code": "30",
+        "name": "Liam Lawson",
+        "point": "36"
+    },  
+    {
+        "p": "15",
+        "code": "32",
+        "name": "Esteban Ocon",
+        "point": "32"
+    },  
+    {
+        "p": "16",
+        "code": "18",
+        "name": "Lance Stroll",
+        "point": "32"
+    },  
+    {
+        "p": "17",
+        "code": "22",
+        "name": "Juki Cunoda",
+        "point": "28"
+    },  
+    {
+        "p": "18",
+        "code": "10",
+        "name": "Pierre Gasly",
+        "point": "22"
+    },  
+    {
+        "p": "19",
+        "code": "5",
+        "name": "Gabriel Bortoleto",
+        "point": "19"
+    },  
+    {
+        "p": "20",
+        "code": "45",
+        "name": "Franco Colapinto",
+        "point": "0"
+    }
+]

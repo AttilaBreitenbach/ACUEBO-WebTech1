@@ -13,161 +13,39 @@
     </div>
     <div class="table_component">
         <table>
-            <thead>
-                <tr>
-                    <th style="width: 10%;">Sorszám</th>
-                    <th style="width: 20%;">Dátum</th>
-                    <th>Helyszín</th>
-                    <th>Város</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Már 14</td>
-                    <td>Ausztrália Nagydíj</td>
-                    <td>Melbourne</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Már 23</td>
-                    <td>Kína Nagydíj</td>
-                    <td>Shanghaj</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ápr 04</td>
-                    <td>Japán Nagydíj</td>
-                    <td>Szuzuka</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Ápr 11</td>
-                    <td>Bahrein Nagydíj</td>
-                    <td>Szahír</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Ápr 18</td>
-                    <td>Szaúd-Arábia Nagydíj</td>
-                    <td>Jeddah</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Máj 02</td>
-                    <td>Amerikai Egyesült Államok</td>
-                    <td>Miami Nagydíj</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Máj 16</td>
-                    <td>Olasz Nagydíj</td>
-                    <td>Imola</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Máj 23</td>
-                    <td>Monaco Nagydíj</td>
-                    <td>Monte Carlo</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Máj 30</td>
-                    <td>Spanyol Nagydíj</td>
-                    <td>Barcelona</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Jún 13</td>
-                    <td>Kanada Nagydíj</td>
-                    <td>Montreal</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Jún 27</td>
-                    <td>Ausztria Nagydíj</td>
-                    <td>Spielberg</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Júl 04</td>
-                    <td>Egyesült Kiráylság Nagydíj</td>
-                    <td>Silverstone</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Júl 25</td>
-                    <td>Belguim Nagydíj</td>
-                    <td> Spa-Francorchamps</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>Aug 01</td>
-                    <td>Magyar Nagydíj</td>
-                    <td>Mogyoród</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Aug 29</td>
-                    <td>Hollandia Nagydíj</td>
-                    <td>Zandvoort</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>Szept 05</td>
-                    <td>Olasz Nagydíj</td>
-                    <td>Monza</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>Szept 19</td>
-                    <td>Azerbajdszán Nagydíj</td>
-                    <td>Baku</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>Okt 03</td>
-                    <td>Szingapúr Nagydíj</td>
-                    <td>Szingapúr</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>Okt 17</td>
-                    <td>USA Nagydíj</td>
-                    <td>Austin</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>Okt 24</td>
-                    <td>Mexikó Nagydíj</td>
-                    <td>Mexikóváros</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>Nov 07</td>
-                    <td>Brazília Nagydíj</td>
-                    <td>Sao Paulo</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>Nov 20</td>
-                    <td>USA Nagydíj</td>
-                    <td>Las Vegas</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>Nov 28</td>
-                    <td>Katar Nagydíj</td>
-                    <td>Doha</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>Dec 05</td>
-                    <td>Egyesült Arab Emírség Nagydíj</td>
-                    <td>Abu-Dzabi</td>
-                </tr>
-            </tbody>
-        </table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Sorszám</th>
+                        <th style="width: 10%;">Dátum</th>
+                        <th>Helyszín</th>
+                        <th>Város</th>
+                    </tr>
+                </thead>
+                <tbody id="data-output">
+
+                </tbody>
+            </table>
     </div>
+    <script>
+        fetch("data3.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(datas){
+            let placeholder = document.querySelector("#data-output");
+            let out ="";
+            for (let data of datas) {
+                out += `
+                <tr>
+                <td style="">${data.sorszam}</td>
+                <td>${data.datum}</td>
+                <td>${data.helyszin}</td>
+                <td>${data.varos}</td>
+                </tr>
+            `;  
+                }
+            placeholder.innerHTML = out;
+        })
+    </script>
 </body>
 </html>

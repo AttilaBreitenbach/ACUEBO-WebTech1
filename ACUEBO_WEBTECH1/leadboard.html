@@ -12,53 +12,73 @@
     <div class="tartalom">
         <div class="bal">
             <table>
-                <tr>
-                    <th>P</th>
-                    <th>#</th>
-                    <th>Név</th>
-                    <th>Pont</th>
-                </tr>
-                <tr><td>1.</td><td>4</td><td class="l">Lando Norris</td><td>390</td></tr>
-                <tr><td>2.</td><td>81</td><td class="l">Oscar Piastri</td><td>366</td></tr>
-                <tr><td>3.</td><td>1</td><td class="l">Max Verstappen</td><td>366</td></tr>
-                <tr><td>4.</td><td>63</td><td class="l">George Russel</td><td>294</td></tr>
-                <tr><td>5.</td><td>16</td><td class="l">Charles Leclerc</td><td>226</td></tr>
-                <tr><td>6.</td><td>44</td><td class="l">Lewis Hamilton</td><td>152</td></tr>
-                <tr><td>7.</td><td>12</td><td class="l">Andrea Kimi Antonelli</td><td>136</td></tr>
-                <tr><td>8.</td><td>23</td><td class="l">Alexander Albon</td><td>73</td></tr>          
-                <tr><td>9.</td><td>37</td><td class="l">Isack Hadjar</td><td>51</td></tr>
-                <tr><td>10.</td><td>27</td><td class="l">Nico Hülkenberg</td><td>49</td></tr>
-                <tr><td>11.</td><td>55</td><td class="l">Carlos Sainz</td><td>48</td></tr>
-                <tr><td>12.</td><td>50</td><td class="l">Oliver Bearman</td><td>42</td></tr>
-                <tr><td>13.</td><td>14</td><td class="l">Fernando Alonso</td><td>40</td></tr>
-                <tr><td>14.</td><td>30</td><td class="l">Liam Lawson</td><td>36</td></tr>
-                <tr><td>15.</td><td>32</td><td class="l">Esteban Ocon</td><td>32</td></tr>
-                <tr><td>16.</td><td>18</td><td class="l">Lance Stroll</td><td>32</td></tr>
-                <tr><td>17.</td><td>22</td><td class="l">Juki Cunoda</td><td>28</td></tr>
-                <tr><td>18.</td><td>10</td><td class="l">Pierre Gasly</td><td>22</td></tr>
-                <tr><td>19.</td><td>5</td><td class="l">Gabriel Bortoleto</td><td>19</td></tr>
-                <tr><td>20.</td><td>45</td><td class="l">Franco Colapinto</td><td>0</td></tr>
-                </table>
+                <thead>
+                    <tr>
+                        <th>p</th>
+                        <th>#</th>
+                        <th>Név</th>
+                        <th>Pont</th>
+                    </tr>
+                </thead>
+                <tbody id="data-output">
+
+                </tbody>
+            </table>
         </div>
         <div class="jobb">
             <table>
-                <tr>
-                    <th>P</th>
-                    <th>Csapat</th>
-                    <th>Pont</th>
-                </tr>
-                <tr><td>1.</td><td class="l">McLaren Formula 1 Team</td><td>756</td></tr>
-                <tr><td>2.</td><td class="l">Mercedes-AMG PETRONAS Formula One Team</td><td>430</td></tr>
-                <tr><td>3.</td><td class="l">Oracle Red Bull Racing</td><td>391</td></tr>
-                <tr><td>4.</td><td class="l">Scuderia Ferrari</td><td>378</td></tr>
-                <tr><td>5.</td><td class="l">Williams Racing</td><td>121</td></tr>
-                <tr><td>6.</td><td class="l">Visa Cash App RB Formula One Team</td><td>90</td></tr>
-                <tr><td>7.</td><td class="l">MoneyGram Haas F1 Team</td><td>74</td></tr>
-                <tr><td>8.</td><td class="l">Aston Martin Aramco F1 Team</td><td>72</td></tr>
-                <tr><td>9.</td><td class="l">Stake F1 Team Kick Sauber</td><td>68</td></tr>
-                <tr><td>10.</td><td class="l">BWT Alpine F1 Team</td><td>22</td></tr>
-                </table>
+                <thead>
+                    <tr>
+                        <th>p</th>
+                        <th>Team</th>
+                        <th>Pont</th>
+                    </tr>
+                </thead>
+                <tbody id="data-output2">
+
+                </tbody>
+            </table>
         </div>
     </div>
+    <script>
+        fetch("data1.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(datas){
+            let placeholder = document.querySelector("#data-output");
+            let out ="";
+            for (let data of datas) {
+                out += `
+                <tr>
+                <td>${data.p}</td>
+                <td>${data.code}</td>
+                <td class="l">${data.name}</td>
+                <td>${data.point}</td>
+                </tr>
+            `;  
+                }
+            placeholder.innerHTML = out;
+        })
+
+        fetch("data2.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(datas){
+            let placeholder = document.querySelector("#data-output2");
+            let out ="";
+            for (let data of datas) {
+                out += `
+                <tr>
+                <td>${data.p}</td>
+                <td class="l">${data.team}</td>
+                <td>${data.point}</td>
+                </tr>
+            `;  
+                }
+            placeholder.innerHTML = out;
+        })
+    </script>
 </body>
 </html>
