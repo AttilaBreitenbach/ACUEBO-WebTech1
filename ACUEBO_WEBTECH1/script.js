@@ -5,11 +5,12 @@ let day = d.getDate();
 document.getElementById("date").innerHTML = month +" "+ day;
 //////////////////////////////////
 var countDownDate = new Date("Dec 06, 2025 00:00:00").getTime();
+var countDownDate2 = new Date("Dec 14, 2025 00:00:00").getTime();
 var x = setInterval(function() {
 
   var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+  var distance = countDownDate2 - now;
 
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
