@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 10%;">Kurzus</th>
+                <th style="width: 10%;">Helyszín/th>
+                <th>Oktató</th>
+                <th>Időpont</th>
+                <th>Tipus</th>
+            </tr>
+        </thead>
+        <tbody id="data-output">
+
+        </tbody>
+    </table>
+    <script>
+        fetch("data.json")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(datas){
+            let placeholder = document.querySelector("#data-output");
+            let out ="";
+            for (let data of datas) {
+                out += `
+                <tr>
+                <td style="">${data.name}</td>
+                <td>${data.helyszin}</td>
+                <td>${data.oktato}</td>
+                <td>${data.idopont}</td>
+                <td>${data.tipus}</td>
+                </tr>
+            `;  
+                }
+            placeholder.innerHTML = out;
+        })
+    </script>
+</body>
+</html>
