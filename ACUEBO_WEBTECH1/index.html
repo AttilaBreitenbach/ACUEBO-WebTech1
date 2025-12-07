@@ -47,7 +47,7 @@
                         <tr><td>7.</td><td>12</td><td>Andrea Kimi Antonelli</td><td>136</td></tr>
                         <tr><td>8.</td><td>23</td><td>Alexander Albon</td><td>73</td></tr>
                     </table>
-                    <a href="leadboard.html" class="bt">Bővebben</a>
+                    <a href="leadboard.html" class="bt" style="width: 100%; text-align: center;">Bővebben</a>
                 </div>
                 <div class="box center-top">
                     <video width="100%" height="100%" controls muted>
@@ -92,34 +92,34 @@
                         <li><a href="" style="text-decoration: none; color: white;">Sokkoló újítás? MotoGP is beszállhat az F1 utcai versenyeibe!</a></li>
                     </ul>
                     <p>További hírekért iratkozz fel hírlevelünkre:</p>
+                    <!-- form-start -->
                     <button onclick="document.getElementById('id01').style.display='block'" class="bt">Felíratkozás</button>
                     <div id="id01" class="modal">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <form class="modal-content" action="">
-                            <div class="container">
-                                <h1>Felíratkozás Hírlevélre</h1>
-                                <p>(Töltsön ki minden mezőt)</p>
-                                <hr>
-                                <label for="email"><b>Email:</b></label>
-                                <input type="text" placeholder="Enter Email" name="email" required><br>
+                        <div class="content">
+                            <p>szöveg</p>
+                            <form action="/action_page.php">
+                                <label for="fname">First Name:</label>
+                                <input type="text" id="fname" name="fname" placeholder="Your first name">
 
-                                <label for="name"><b>Név:</b></label>
-                                <input type="name" placeholder="Enter Name" name="name" required><br>
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname" placeholder="Your last name">
 
-                                <label for="age"><b>Kor:</b></label>
-                                <input type="age" placeholder="Enter Age" name="age" required><br>
-                                
-                                <label>
-                                <input type="checkbox" name="female" style="margin-bottom:15px"> Férfi
-                                <input type="checkbox" name="male" style="margin-bottom:15px"> Nő
-                                </label>
-                                <div class="clearfix">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mégse</button>
-                                    <button type="submit" class="signupbtn">Felíratkozás</button>
-                                </div>
-                            </div>
-                        </form>
+                                <label for="country">Country:</label>
+                                <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                                    
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
                     </div>
+                    <!-- from-end -->
                 </div>
             </div>
         </div>
